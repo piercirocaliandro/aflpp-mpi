@@ -1,0 +1,307 @@
+[
+  {
+    "directory": ".",
+    "command": "mpicc -O2 -Wno-error=format-truncation -Wno-format-truncation  -g -Wno-pointer-sign -Wno-variadic-macros -Wall -Wextra -Wno-pointer-arith -fPIC -I include/ -DAFL_PATH=\\\"/usr/local/lib/afl\\\" -DBIN_PATH=\\\"/usr/local/bin\\\" -DDOC_PATH=\\\"/usr/local/share/doc/afl\\\" -flto -DHAVE_ZLIB -c src/afl-common.c -o src/afl-common.o",
+    "file": "src/afl-common.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -O2 -Wno-error=format-truncation -Wno-format-truncation  -g -Wno-pointer-sign -Wno-variadic-macros -Wall -Wextra -Wno-pointer-arith -fPIC -I include/ -DAFL_PATH=\\\"/usr/local/lib/afl\\\" -DBIN_PATH=\\\"/usr/local/bin\\\" -DDOC_PATH=\\\"/usr/local/share/doc/afl\\\" -flto -DHAVE_ZLIB -c src/afl-sharedmem.c -o src/afl-sharedmem.o",
+    "file": "src/afl-sharedmem.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -O2 -Wno-error=format-truncation -Wno-format-truncation  -g -Wno-pointer-sign -Wno-variadic-macros -Wall -Wextra -Wno-pointer-arith -fPIC -I include/ -DAFL_PATH=\\\"/usr/local/lib/afl\\\" -DBIN_PATH=\\\"/usr/local/bin\\\" -DDOC_PATH=\\\"/usr/local/share/doc/afl\\\" -flto -DHAVE_ZLIB -c src/afl-forkserver.c -o src/afl-forkserver.o",
+    "file": "src/afl-forkserver.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -O2 -Wno-error=format-truncation -Wno-format-truncation  -g -Wno-pointer-sign -Wno-variadic-macros -Wall -Wextra -Wno-pointer-arith -fPIC -I include/ -DAFL_PATH=\\\"/usr/local/lib/afl\\\" -DBIN_PATH=\\\"/usr/local/bin\\\" -DDOC_PATH=\\\"/usr/local/share/doc/afl\\\" -Wno-error=format-truncation -Wno-format-truncation -DHAVE_ZLIB -Iinclude -c src/afl-performance.c -o src/afl-performance.o",
+    "file": "src/afl-performance.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -I/usr/lib/llvm-14/include -I./../include -Wall -g -Wno-cast-qual -Wno-variadic-macros -Wno-pointer-sign -I ./include/ -I ./instrumentation/ -DAFL_PATH=\\\"/usr/local/lib/afl\\\" -DBIN_PATH=\\\"/usr/local/bin\\\" -DLLVM_BINDIR=\\\"/usr/lib/llvm-14/bin\\\" -DVERSION=\\\"++4.22a\\\" -DLLVM_LIBDIR=\\\"/usr/lib/llvm-14/lib\\\" -DLLVM_VERSION=\\\"14.0.6\\\" -DAFL_CLANG_FLTO=\\\"-flto=full\\\" -DAFL_REAL_LD=\\\"/usr/lib/llvm-14/bin/ld.lld\\\" -DAFL_CLANG_LDPATH=\\\"1\\\" -DAFL_CLANG_FUSELD=\\\"1\\\" -DCLANG_BIN=\\\"/usr/lib/llvm-14/bin/clang\\\" -DCLANGPP_BIN=\\\"/usr/lib/llvm-14/bin/clang++\\\" -DUSE_BINDIR=1 -Wno-unused-function -fdebug-prefix-map=\"/home/packer/afl_mpi=llvm_mode\" -Wno-deprecated  -O3 -Wno-unused-result -fPIC -c instrumentation/afl-compiler-rt.o.c -o afl-compiler-rt.o",
+    "file": "afl-compiler-rt.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -I. -I../../include -O3 -funroll-loops -g -fPIC -c aflpp_driver.c",
+    "file": "aflpp_driver.c"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -O3 -funroll-loops -g -fPIC -O0 -funroll-loops -c aflpp_qemu_driver.c",
+    "file": "aflpp_qemu_driver.c"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/asan/asan_arm32.c -o /home/packer/afl_mpi/frida_mode/build/obj/asan_arm32.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/asan_arm32.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/asan/asan_arm64.c -o /home/packer/afl_mpi/frida_mode/build/obj/asan_arm64.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/asan_arm64.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/asan/asan.c -o /home/packer/afl_mpi/frida_mode/build/obj/asan.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/asan.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/asan/asan_x64.c -o /home/packer/afl_mpi/frida_mode/build/obj/asan_x64.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/asan_x64.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/asan/asan_x86.c -o /home/packer/afl_mpi/frida_mode/build/obj/asan_x86.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/asan_x86.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/cmplog/cmplog_arm32.c -o /home/packer/afl_mpi/frida_mode/build/obj/cmplog_arm32.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/cmplog_arm32.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/cmplog/cmplog_arm64.c -o /home/packer/afl_mpi/frida_mode/build/obj/cmplog_arm64.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/cmplog_arm64.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/cmplog/cmplog.c -o /home/packer/afl_mpi/frida_mode/build/obj/cmplog.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/cmplog.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/cmplog/cmplog_x64.c -o /home/packer/afl_mpi/frida_mode/build/obj/cmplog_x64.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/cmplog_x64.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/cmplog/cmplog_x86.c -o /home/packer/afl_mpi/frida_mode/build/obj/cmplog_x86.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/cmplog_x86.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/ctx/ctx_arm32.c -o /home/packer/afl_mpi/frida_mode/build/obj/ctx_arm32.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/ctx_arm32.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/ctx/ctx_arm64.c -o /home/packer/afl_mpi/frida_mode/build/obj/ctx_arm64.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/ctx_arm64.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/ctx/ctx_x64.c -o /home/packer/afl_mpi/frida_mode/build/obj/ctx_x64.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/ctx_x64.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/ctx/ctx_x86.c -o /home/packer/afl_mpi/frida_mode/build/obj/ctx_x86.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/ctx_x86.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/instrument/instrument_arm32.c -o /home/packer/afl_mpi/frida_mode/build/obj/instrument_arm32.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/instrument_arm32.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/instrument/instrument_arm64.c -o /home/packer/afl_mpi/frida_mode/build/obj/instrument_arm64.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/instrument_arm64.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/instrument/instrument.c -o /home/packer/afl_mpi/frida_mode/build/obj/instrument.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/instrument.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/instrument/instrument_coverage.c -o /home/packer/afl_mpi/frida_mode/build/obj/instrument_coverage.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/instrument_coverage.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/instrument/instrument_debug.c -o /home/packer/afl_mpi/frida_mode/build/obj/instrument_debug.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/instrument_debug.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/instrument/instrument_x64.c -o /home/packer/afl_mpi/frida_mode/build/obj/instrument_x64.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/instrument_x64.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/instrument/instrument_x64_cache.c -o /home/packer/afl_mpi/frida_mode/build/obj/instrument_x64_cache.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/instrument_x64_cache.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/instrument/instrument_x86.c -o /home/packer/afl_mpi/frida_mode/build/obj/instrument_x86.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/instrument_x86.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/js/js_api.c -o /home/packer/afl_mpi/frida_mode/build/obj/js_api.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/js_api.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/js/js.c -o /home/packer/afl_mpi/frida_mode/build/obj/js.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/js.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/lib/lib_apple.c -o /home/packer/afl_mpi/frida_mode/build/obj/lib_apple.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/lib_apple.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/lib/lib.c -o /home/packer/afl_mpi/frida_mode/build/obj/lib.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/lib.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/persistent/persistent_arm32.c -o /home/packer/afl_mpi/frida_mode/build/obj/persistent_arm32.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/persistent_arm32.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/persistent/persistent_arm64.c -o /home/packer/afl_mpi/frida_mode/build/obj/persistent_arm64.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/persistent_arm64.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/persistent/persistent.c -o /home/packer/afl_mpi/frida_mode/build/obj/persistent.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/persistent.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/persistent/persistent_x64.c -o /home/packer/afl_mpi/frida_mode/build/obj/persistent_x64.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/persistent_x64.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/persistent/persistent_x86.c -o /home/packer/afl_mpi/frida_mode/build/obj/persistent_x86.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/persistent_x86.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/seccomp/seccomp_atomic.c -o /home/packer/afl_mpi/frida_mode/build/obj/seccomp_atomic.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/seccomp_atomic.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/seccomp/seccomp.c -o /home/packer/afl_mpi/frida_mode/build/obj/seccomp.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/seccomp.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/seccomp/seccomp_callback.c -o /home/packer/afl_mpi/frida_mode/build/obj/seccomp_callback.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/seccomp_callback.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/seccomp/seccomp_child.c -o /home/packer/afl_mpi/frida_mode/build/obj/seccomp_child.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/seccomp_child.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/seccomp/seccomp_event.c -o /home/packer/afl_mpi/frida_mode/build/obj/seccomp_event.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/seccomp_event.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/seccomp/seccomp_filter.c -o /home/packer/afl_mpi/frida_mode/build/obj/seccomp_filter.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/seccomp_filter.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/seccomp/seccomp_print.c -o /home/packer/afl_mpi/frida_mode/build/obj/seccomp_print.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/seccomp_print.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/seccomp/seccomp_socket.c -o /home/packer/afl_mpi/frida_mode/build/obj/seccomp_socket.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/seccomp_socket.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/seccomp/seccomp_syscall.c -o /home/packer/afl_mpi/frida_mode/build/obj/seccomp_syscall.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/seccomp_syscall.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/stats/stats_arm32.c -o /home/packer/afl_mpi/frida_mode/build/obj/stats_arm32.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/stats_arm32.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/stats/stats_arm64.c -o /home/packer/afl_mpi/frida_mode/build/obj/stats_arm64.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/stats_arm64.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/stats/stats.c -o /home/packer/afl_mpi/frida_mode/build/obj/stats.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/stats.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/stats/stats_x86_64.c -o /home/packer/afl_mpi/frida_mode/build/obj/stats_x86_64.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/stats_x86_64.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/entry.c -o /home/packer/afl_mpi/frida_mode/build/obj/entry.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/entry.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/intercept.c -o /home/packer/afl_mpi/frida_mode/build/obj/intercept.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/intercept.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/main.c -o /home/packer/afl_mpi/frida_mode/build/obj/main.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/main.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/module.c -o /home/packer/afl_mpi/frida_mode/build/obj/module.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/module.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/output.c -o /home/packer/afl_mpi/frida_mode/build/obj/output.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/output.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/prefetch.c -o /home/packer/afl_mpi/frida_mode/build/obj/prefetch.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/prefetch.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/ranges.c -o /home/packer/afl_mpi/frida_mode/build/obj/ranges.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/ranges.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/shm.c -o /home/packer/afl_mpi/frida_mode/build/obj/shm.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/shm.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/stalker.c -o /home/packer/afl_mpi/frida_mode/build/obj/stalker.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/stalker.o"
+  },
+  {
+    "directory": ".",
+    "command": "mpicc -fPIC -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -g -O3 -funroll-loops -ffunction-sections  -Wno-pointer-arith -I /home/packer/afl_mpi/frida_mode/../include -I /home/packer/afl_mpi/frida_mode/build/frida/ -I /home/packer/afl_mpi/frida_mode/include/ -c /home/packer/afl_mpi/frida_mode/src/util.c -o /home/packer/afl_mpi/frida_mode/build/obj/util.o",
+    "file": "/home/packer/afl_mpi/frida_mode/build/obj/util.o"
+  }
+]
